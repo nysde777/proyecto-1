@@ -41,11 +41,10 @@ public class PnlNuevoCliente extends javax.swing.JPanel {
         this.txtNombre.setText(nuevoCliente.getNombre());
         this.txtDireccion.setText(nuevoCliente.getDireccion());
         this.txtTelefono.setText(nuevoCliente.getTelefono());
-        this.txtRfc.setText(nuevoCliente.getRfc());
-        this.txtColonia.setText(nuevoCliente.getColonia());
+   
         this.txtComunidad.setText(nuevoCliente.getComunidad());
         this.txtMunicipio.setText(nuevoCliente.getMunicipio());
-        this.txtCodigoPostal.setText(nuevoCliente.getCodigoPostal());
+        
         this.cbTarifas.setSelectedItem(nuevoCliente.getTarifa());
         this.dcFechaRegistro.setDate(nuevoCliente.getFechaRegistro());
     }
@@ -77,19 +76,13 @@ public class PnlNuevoCliente extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
         txtDireccion = new javax.swing.JTextField();
         txtTelefono = new javax.swing.JTextField();
-        txtRfc = new javax.swing.JTextField();
-        txtColonia = new javax.swing.JTextField();
         txtComunidad = new javax.swing.JTextField();
         txtMunicipio = new javax.swing.JTextField();
-        txtCodigoPostal = new javax.swing.JTextField();
         cbTarifas = new javax.swing.JComboBox();
         jLabel10 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -144,24 +137,6 @@ public class PnlNuevoCliente extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(6, 9, 5, 10);
         jPanel1.add(jLabel4, gridBagConstraints);
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel5.setText("RFC:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
-        gridBagConstraints.insets = new java.awt.Insets(6, 0, 5, 6);
-        jPanel1.add(jLabel5, gridBagConstraints);
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel6.setText("Colonia:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
-        gridBagConstraints.insets = new java.awt.Insets(6, 9, 5, 10);
-        jPanel1.add(jLabel6, gridBagConstraints);
-
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("Comunidad:");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -179,15 +154,6 @@ public class PnlNuevoCliente extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
         gridBagConstraints.insets = new java.awt.Insets(6, 9, 5, 10);
         jPanel1.add(jLabel8, gridBagConstraints);
-
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel9.setText("Cod. Postal");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 8;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
-        gridBagConstraints.insets = new java.awt.Insets(6, 9, 14, 10);
-        jPanel1.add(jLabel9, gridBagConstraints);
 
         txtNombre.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtNombre.setPreferredSize(new java.awt.Dimension(280, 23));
@@ -217,24 +183,6 @@ public class PnlNuevoCliente extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 5, 0);
         jPanel1.add(txtTelefono, gridBagConstraints);
 
-        txtRfc.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtRfc.setPreferredSize(new java.awt.Dimension(120, 23));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.insets = new java.awt.Insets(6, 0, 5, 15);
-        jPanel1.add(txtRfc, gridBagConstraints);
-
-        txtColonia.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtColonia.setPreferredSize(new java.awt.Dimension(280, 23));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.insets = new java.awt.Insets(6, 0, 5, 15);
-        jPanel1.add(txtColonia, gridBagConstraints);
-
         txtComunidad.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtComunidad.setPreferredSize(new java.awt.Dimension(280, 23));
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -255,14 +203,6 @@ public class PnlNuevoCliente extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 5, 0);
         jPanel1.add(txtMunicipio, gridBagConstraints);
-
-        txtCodigoPostal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtCodigoPostal.setPreferredSize(new java.awt.Dimension(120, 23));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 8;
-        gridBagConstraints.insets = new java.awt.Insets(6, 0, 14, 0);
-        jPanel1.add(txtCodigoPostal, gridBagConstraints);
 
         cbTarifas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         cbTarifas.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Domestico", "Comercial", "Industrial", "Publico", "Insen", "Baldio", "Especial" }));
@@ -344,11 +284,10 @@ public class PnlNuevoCliente extends javax.swing.JPanel {
         nuevoCliente.setNombre(this.txtNombre.getText());
         nuevoCliente.setDireccion(this.txtDireccion.getText());
         nuevoCliente.setTelefono(this.txtTelefono.getText());
-        nuevoCliente.setRfc(this.txtRfc.getText());
-        nuevoCliente.setColonia(this.txtColonia.getText());
+        
         nuevoCliente.setComunidad(this.txtComunidad.getText());
         nuevoCliente.setMunicipio(this.txtMunicipio.getText());
-        nuevoCliente.setCodigoPostal(this.txtCodigoPostal.getText());
+      
         nuevoCliente.setTarifa(this.cbTarifas.getSelectedItem().toString());
         nuevoCliente.setFechaRegistro(this.dcFechaRegistro.getCalendar().getTime());
      
@@ -425,21 +364,15 @@ public class PnlNuevoCliente extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lbShow;
-    private javax.swing.JTextField txtCodigoPostal;
-    private javax.swing.JTextField txtColonia;
     private javax.swing.JTextField txtComunidad;
     private javax.swing.JTextField txtDireccion;
     private javax.swing.JTextField txtMunicipio;
     private javax.swing.JTextField txtNombre;
-    private javax.swing.JTextField txtRfc;
     private javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 
@@ -447,11 +380,11 @@ public class PnlNuevoCliente extends javax.swing.JPanel {
        this.txtNombre.setText("");
        this.txtDireccion.setText("");
        this.txtTelefono.setText("");
-       this.txtRfc.setText("");
-       this.txtColonia.setText("");
+      
+      
        this.txtComunidad.setText("");
        this.txtMunicipio.setText("");
-       this.txtCodigoPostal.setText("");
+       
        this.cbTarifas.setSelectedIndex(0);
        this.dcFechaRegistro.setCalendar(null);
     }

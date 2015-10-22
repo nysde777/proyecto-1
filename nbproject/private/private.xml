@@ -2,6 +2,26 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/ventanas/IRegistroPagos.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/paneles/PnlNuevaOrden.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/ventanas/PantallaLogin.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/paneles/PnlReporteIngresos.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/paneles/PnlImprimirPago.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/clases/Cliente.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/paneles/PnlUsuarioNuevo.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/clases/ModelTablaClientes.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/ventanas/IRegistroClientes.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/paneles/PnlNuevoCliente.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/ventanas/MainApp.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/paneles/PnlNuevoPago.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/ventanas/IRegistroOrdenes.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/ventanas/IniciarPrograma.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/ventanas/IReporteDeOrdenes.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/paneles/PnlBuscarClientes.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/paneles/PnlImprimirOrden.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/ventanas/IReporteIngresos.java</file>
+            <file>file:/H:/ProyectoPagos/proyecto-1/src/ventanas/IRegistroUsuarios.java</file>
+        </group>
     </open-files>
 </project-private>

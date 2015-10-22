@@ -112,7 +112,7 @@ public class MainApp extends javax.swing.JFrame {
         jInternalFrame1.setResizable(true);
         jInternalFrame1.setTitle("Bienvenido");
         jInternalFrame1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jInternalFrame1.setVisible(true);
+        jInternalFrame1.setVisible(false);
 
         panelBienvenido.setEditable(false);
         panelBienvenido.setContentType("text/html"); // NOI18N
@@ -129,12 +129,12 @@ public class MainApp extends javax.swing.JFrame {
             .addGroup(dpLayout.createSequentialGroup()
                 .addGap(111, 111, 111)
                 .addComponent(jInternalFrame1, javax.swing.GroupLayout.PREFERRED_SIZE, 439, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(128, Short.MAX_VALUE))
+                .addContainerGap(567, Short.MAX_VALUE))
         );
         dpLayout.setVerticalGroup(
             dpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dpLayout.createSequentialGroup()
-                .addContainerGap(84, Short.MAX_VALUE)
+                .addContainerGap(345, Short.MAX_VALUE)
                 .addComponent(jInternalFrame1, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(49, 49, 49))
         );

@@ -38,10 +38,10 @@ public class PnlImprimirOrden extends javax.swing.JPanel implements Printable{
         this.lbNroCuenta.setText(""+this.orden.getCliente().getNumeroCuenta());
         this.lbNombre.setText(this.orden.getCliente().getNombre());
         this.lbDireccion.setText(this.orden.getCliente().getDireccion());
-        this.lbColonia.setText(this.orden.getCliente().getColonia());
+        
         this.lbMunicipio.setText(this.orden.getCliente().getMunicipio());
         this.lbTelefono.setText(this.orden.getCliente().getTelefono());
-        this.lbRfc.setText(this.orden.getCliente().getRfc());
+        
         this.lbInspector.setText(this.orden.getInspector());
         this.lbTipoOrden.setText(this.orden.getTipo());
         this.lbMotivo.setText(this.orden.getMotivoCorte());
@@ -62,10 +62,8 @@ public class PnlImprimirOrden extends javax.swing.JPanel implements Printable{
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -119,15 +117,6 @@ public class PnlImprimirOrden extends javax.swing.JPanel implements Printable{
         gridBagConstraints.insets = new java.awt.Insets(3, 8, 2, 0);
         add(jLabel4, gridBagConstraints);
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel5.setText("Colonia:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
-        gridBagConstraints.insets = new java.awt.Insets(3, 8, 2, 0);
-        add(jLabel5, gridBagConstraints);
-
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("Municipio:");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -145,15 +134,6 @@ public class PnlImprimirOrden extends javax.swing.JPanel implements Printable{
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
         gridBagConstraints.insets = new java.awt.Insets(3, 8, 2, 0);
         add(jLabel7, gridBagConstraints);
-
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel8.setText("RFC:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 7;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
-        gridBagConstraints.insets = new java.awt.Insets(3, 8, 2, 0);
-        add(jLabel8, gridBagConstraints);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("Inspector:");
@@ -360,10 +340,8 @@ public class PnlImprimirOrden extends javax.swing.JPanel implements Printable{
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel lbColonia;
     private javax.swing.JLabel lbDireccion;
@@ -401,14 +379,12 @@ public class PnlImprimirOrden extends javax.swing.JPanel implements Printable{
       posy +=15;
       g2d.drawString("Direccion: "+this.orden.getCliente().getDireccion(), posx+getDiferenciaAncho(anchoMayor,fm.stringWidth("Direccion: ")), posy);
       posy +=15;
-      g2d.drawString("Colonia: "+this.orden.getCliente().getColonia(), posx+getDiferenciaAncho(anchoMayor,fm.stringWidth("Colonia: ")), posy);
-      posy +=15;
+     
       g2d.drawString("Municipio: "+this.orden.getCliente().getMunicipio(), posx+getDiferenciaAncho(anchoMayor,fm.stringWidth("Municipio: ")), posy);
       posy +=15;
       g2d.drawString("Telefono: "+this.orden.getCliente().getTelefono(), posx+getDiferenciaAncho(anchoMayor,fm.stringWidth("Telefono: ")), posy);
       posy +=15;
-      g2d.drawString("RFC: "+this.orden.getCliente().getRfc(), posx+getDiferenciaAncho(anchoMayor,fm.stringWidth("RFC: ")), posy);
-            posy +=15;      
+           
       g2d.drawString("Inspector: "+this.orden.getInspector(), posx+getDiferenciaAncho(anchoMayor,fm.stringWidth("Inspector: ")), posy);
       posy +=15;
       g2d.drawString("Tipo Orden: "+this.orden.getTipo(), posx+getDiferenciaAncho(anchoMayor,fm.stringWidth("Tipo Orden: ")), posy);

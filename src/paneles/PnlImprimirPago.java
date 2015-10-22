@@ -38,10 +38,10 @@ public class PnlImprimirPago extends javax.swing.JPanel implements Printable{
         this.blNroFolio.setText(""+pago.getClvFolio());
         this.lbNombre.setText(pago.getNroCuenta().getNombre());
         this.lbDireccion.setText(pago.getNroCuenta().getDireccion());
-        this.lbColonia.setText(pago.getNroCuenta().getColonia());
+        
         this.lbMunicipio.setText(pago.getNroCuenta().getMunicipio());
         this.lbTelefono.setText(pago.getNroCuenta().getTelefono());
-        this.lbRfc.setText(pago.getNroCuenta().getRfc());
+     
         
         this.lbFechaCubierta.setText(pago.getFormatearFecha(pago.getFechaCubierta(), "dd/MM/yyyy"));
         this.lbMesesTranscurridos.setText(pago.getMesesTranscurridos()+"");
@@ -68,10 +68,8 @@ public class PnlImprimirPago extends javax.swing.JPanel implements Printable{
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -142,15 +140,6 @@ public class PnlImprimirPago extends javax.swing.JPanel implements Printable{
         gridBagConstraints.insets = new java.awt.Insets(0, 12, 0, 0);
         add(jLabel5, gridBagConstraints);
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel6.setText("Colonia:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
-        gridBagConstraints.insets = new java.awt.Insets(0, 12, 0, 0);
-        add(jLabel6, gridBagConstraints);
-
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("Municipio:");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -168,15 +157,6 @@ public class PnlImprimirPago extends javax.swing.JPanel implements Printable{
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
         gridBagConstraints.insets = new java.awt.Insets(0, 12, 0, 0);
         add(jLabel8, gridBagConstraints);
-
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel9.setText("RFC:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 8;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
-        gridBagConstraints.insets = new java.awt.Insets(0, 12, 0, 0);
-        add(jLabel9, gridBagConstraints);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel10.setText("Datos del Pago");
@@ -451,10 +431,8 @@ public class PnlImprimirPago extends javax.swing.JPanel implements Printable{
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel lbColonia;
     private javax.swing.JLabel lbDireccion;
     private javax.swing.JLabel lbFechaAPagar;
@@ -494,13 +472,12 @@ public class PnlImprimirPago extends javax.swing.JPanel implements Printable{
       posy +=15;
       g2d.drawString("Direccion: "+pago.getNroCuenta().getDireccion(), posx+getDiferenciaAncho(anchoMayor,fm.stringWidth("Direccion: ")), posy);
       posy +=15;
-      g2d.drawString("Colonia: "+pago.getNroCuenta().getColonia(), posx+getDiferenciaAncho(anchoMayor,fm.stringWidth("Colonia: ")), posy);
-      posy +=15;
+     
       g2d.drawString("Municipio: "+pago.getNroCuenta().getMunicipio(), posx+getDiferenciaAncho(anchoMayor,fm.stringWidth("Municipio: ")), posy);
       posy +=15;
       g2d.drawString("Telefono: "+pago.getNroCuenta().getTelefono(), posx+getDiferenciaAncho(anchoMayor,fm.stringWidth("Telefono: ")), posy);
       posy +=15;
-      g2d.drawString("RFC: "+pago.getNroCuenta().getRfc(), posx+getDiferenciaAncho(anchoMayor,fm.stringWidth("RFC: ")), posy);
+     
       g2d.drawLine(0, posy+3, (int)pageFormat.getImageableWidth(), posy+3);
       posy +=15;
       g2d.drawString("Datos del Pago", posx, posy);

@@ -58,11 +58,11 @@ public class PnlNuevoPago extends javax.swing.JPanel {
         this.txtCodigoCliente.setText(""+nuevoPago.getNroCuenta().getNumeroCuenta());
         this.txtNombreCliente.setText(nuevoPago.getNroCuenta().getNombre());
         this.txtDireccion.setText(nuevoPago.getNroCuenta().getDireccion());
-        this.txtColonia.setText(nuevoPago.getNroCuenta().getColonia());
+        
         this.txtMunicipio.setText(nuevoPago.getNroCuenta().getMunicipio());
         this.txtTelefono.setText(nuevoPago.getNroCuenta().getTelefono());
         this.txtTarifa.setText(nuevoPago.getNroCuenta().getTarifa());
-        this.txtRfc.setText(nuevoPago.getNroCuenta().getRfc());
+        
     }
     
      public boolean IsProcesoOk()
@@ -89,18 +89,14 @@ public class PnlNuevoPago extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         txtCodigoCliente = new javax.swing.JTextField();
         txtNombreCliente = new javax.swing.JTextField();
         txtDireccion = new javax.swing.JTextField();
-        txtColonia = new javax.swing.JTextField();
         txtMunicipio = new javax.swing.JTextField();
         txtTelefono = new javax.swing.JTextField();
-        txtRfc = new javax.swing.JTextField();
         txtTarifa = new javax.swing.JTextField();
         bntBuscarCliente = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
@@ -170,15 +166,6 @@ public class PnlNuevoPago extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(8, 16, 0, 0);
         jPanel4.add(jLabel4, gridBagConstraints);
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel5.setText("Colonia:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
-        gridBagConstraints.insets = new java.awt.Insets(8, 16, 0, 0);
-        jPanel4.add(jLabel5, gridBagConstraints);
-
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("Municipio:");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -196,15 +183,6 @@ public class PnlNuevoPago extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
         gridBagConstraints.insets = new java.awt.Insets(0, 16, 0, 0);
         jPanel4.add(jLabel7, gridBagConstraints);
-
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel8.setText("Rfc:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
-        gridBagConstraints.insets = new java.awt.Insets(8, 17, 0, 0);
-        jPanel4.add(jLabel8, gridBagConstraints);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("Tarifa:");
@@ -242,14 +220,6 @@ public class PnlNuevoPago extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(8, 12, 0, 6);
         jPanel4.add(txtDireccion, gridBagConstraints);
 
-        txtColonia.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtColonia.setPreferredSize(new java.awt.Dimension(120, 23));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.insets = new java.awt.Insets(8, 12, 0, 0);
-        jPanel4.add(txtColonia, gridBagConstraints);
-
         txtMunicipio.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtMunicipio.setPreferredSize(new java.awt.Dimension(120, 23));
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -265,14 +235,6 @@ public class PnlNuevoPago extends javax.swing.JPanel {
         gridBagConstraints.gridy = 4;
         gridBagConstraints.insets = new java.awt.Insets(8, 12, 0, 0);
         jPanel4.add(txtTelefono, gridBagConstraints);
-
-        txtRfc.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtRfc.setPreferredSize(new java.awt.Dimension(120, 23));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.insets = new java.awt.Insets(8, 12, 0, 9);
-        jPanel4.add(txtRfc, gridBagConstraints);
 
         txtTarifa.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtTarifa.setPreferredSize(new java.awt.Dimension(120, 23));
@@ -804,10 +766,8 @@ public class PnlNuevoPago extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -818,14 +778,12 @@ public class PnlNuevoPago extends javax.swing.JPanel {
     private javax.swing.JLabel lbShow;
     private javax.swing.JSpinner spnMesesTranscurridos;
     private javax.swing.JTextField txtCodigoCliente;
-    private javax.swing.JTextField txtColonia;
     private javax.swing.JTextField txtDireccion;
     private javax.swing.JFormattedTextField txtIva;
     private javax.swing.JTextField txtMunicipio;
     private javax.swing.JTextField txtNombreCliente;
     private javax.swing.JFormattedTextField txtRecargo;
     private javax.swing.JFormattedTextField txtRezago;
-    private javax.swing.JTextField txtRfc;
     private javax.swing.JTextField txtTarifa;
     private javax.swing.JTextField txtTelefono;
     private javax.swing.JFormattedTextField txtTotal;

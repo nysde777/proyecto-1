@@ -44,11 +44,10 @@ public class ModelTablaClientes extends AbstractTableModel{
             case 0: return cliente.getNombre();
             case 1: return cliente.getDireccion();
             case 2: return cliente.getTelefono();
-            case 3: return cliente.getRfc();
-            case 4: return cliente.getColonia();
+            
             case 5: return cliente.getComunidad();
             case 6: return cliente.getMunicipio();
-            case 7: return cliente.getCodigoPostal();
+            
             case 8: return cliente.getTarifa();
             case 9: return cliente.getFormatearFecha(cliente.getFechaRegistro(),"dd/MM/yyyy");
             default: return null;    

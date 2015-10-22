@@ -16,11 +16,8 @@ public class Cliente {
     private String nombre;
     private String direccion;
     private String telefono;
-    private String rfc;
-    private String colonia;
     private String comunidad;
     private String municipio;
-    private String codigoPostal;
     private String tarifa;
     private Date fechaRegistro;
     
@@ -28,16 +25,16 @@ public class Cliente {
     public static String NOMBRE_TABLA = "tblcliente";
     public static String SELECCIONAR_TODO = "select * from "+Cliente.NOMBRE_TABLA;
 
-    public Cliente(int NumeroCuenta, String nombre, String direccion, String telefono, String rfc, String colonia, String comunidad, String municipio, String codigoPostal, String tarifa, Date fechaRegistro) {
+    public Cliente(int NumeroCuenta, String nombre, String direccion, String telefono, String comunidad, String municipio, String tarifa, Date fechaRegistro) {
         this.NumeroCuenta = NumeroCuenta;
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
-        this.rfc = rfc;
-        this.colonia = colonia;
+   
+   
         this.comunidad = comunidad;
         this.municipio = municipio;
-        this.codigoPostal = codigoPostal;
+   
         this.tarifa = tarifa;
         this.fechaRegistro = fechaRegistro;
     }
@@ -49,11 +46,10 @@ public class Cliente {
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
-        this.rfc = rfc;
-        this.colonia = colonia;
+        
         this.comunidad = comunidad;
         this.municipio = municipio;
-        this.codigoPostal = codigoPostal;
+       
         this.tarifa = tarifa;
         this.fechaRegistro = fechaRegistro;
     }
@@ -90,21 +86,9 @@ public class Cliente {
         this.telefono = telefono;
     }
 
-    public String getRfc() {
-        return rfc;
-    }
+   
 
-    public void setRfc(String rfc) {
-        this.rfc = rfc;
-    }
-
-    public String getColonia() {
-        return colonia;
-    }
-
-    public void setColonia(String colonia) {
-        this.colonia = colonia;
-    }
+  
 
     public String getComunidad() {
         return comunidad;
@@ -122,13 +106,7 @@ public class Cliente {
         this.municipio = municipio;
     }
 
-    public String getCodigoPostal() {
-        return codigoPostal;
-    }
-
-    public void setCodigoPostal(String codigoPostal) {
-        this.codigoPostal = codigoPostal;
-    }
+  
 
     public String getTarifa() {
         return tarifa;
@@ -163,8 +141,8 @@ public class Cliente {
              "Rfc, Colonia,Comunidad,Municipio,"+
              "CodigoPostal,Tarifa, FechaRegistro)"+
              "VALUES ('"+this.nombre+"','"+this.direccion+"',"+
-             "'"+this.telefono+"','"+this.rfc+"','"+this.colonia+"','"+this.comunidad+"',"+
-             "'"+this.municipio+"','"+this.codigoPostal+"','"+this.tarifa+"',"+
+             "'"+this.telefono+"','"+this.comunidad+"',"+
+             "'"+this.municipio+"','"+this.tarifa+"',"+
              "'"+this.getFormatearFecha(this.fechaRegistro,null)+"')";
         return Conexion.guardarRegistro(sql);
     }
@@ -173,11 +151,11 @@ public class Cliente {
         String sql = "UPDATE tblcliente SET Nombre = '"+this.nombre+"',"+
                       "Direccion = '"+this.direccion+"',"+
                       "Telefono = '"+this.telefono+"',"+
-                      "Rfc = '"+this.rfc+"',"+
-                      "Colonia = '"+this.colonia+"',"+
+                      
+                      
                       "Comunidad = '"+this.comunidad+"',"+
                       "Municipio = '"+this.municipio+"',"+
-                      "CodigoPostal = '"+this.codigoPostal+"',"+
+                      
                       "Tarifa = '"+this.tarifa+"',"+
                       "FechaRegistro = '"+this.getFormatearFecha(this.fechaRegistro,null)+"'"+
                      " WHERE NoCuenta = "+this.NumeroCuenta;
@@ -200,11 +178,10 @@ public class Cliente {
                 cliente.setNombre(clientes.getString(2));
                 cliente.setDireccion(clientes.getString(3));
                 cliente.setTelefono(clientes.getString(4));
-                cliente.setRfc(clientes.getString(5));
-                cliente.setColonia(clientes.getString(6));
+               
                 cliente.setComunidad(clientes.getString(7));
                 cliente.setMunicipio(clientes.getString(8));
-                cliente.setCodigoPostal(clientes.getString(9));
+                
                 cliente.setTarifa(clientes.getString(10));
                 cliente.setFechaRegistro(clientes.getDate(11));
                 ListaClientes.add(cliente);
@@ -227,11 +204,10 @@ public class Cliente {
                 cliente.setNombre(clientes.getString(2));
                 cliente.setDireccion(clientes.getString(3));
                 cliente.setTelefono(clientes.getString(4));
-                cliente.setRfc(clientes.getString(5));
-                cliente.setColonia(clientes.getString(6));
+                
                 cliente.setComunidad(clientes.getString(7));
                 cliente.setMunicipio(clientes.getString(8));
-                cliente.setCodigoPostal(clientes.getString(9));
+               
                 cliente.setTarifa(clientes.getString(10));
                 cliente.setFechaRegistro(clientes.getDate(11));
                 ListaClientes.add(cliente);
@@ -256,11 +232,10 @@ public class Cliente {
                 cliente.setNombre(clientes.getString(2));
                 cliente.setDireccion(clientes.getString(3));
                 cliente.setTelefono(clientes.getString(4));
-                cliente.setRfc(clientes.getString(5));
-                cliente.setColonia(clientes.getString(6));
+               
                 cliente.setComunidad(clientes.getString(7));
                 cliente.setMunicipio(clientes.getString(8));
-                cliente.setCodigoPostal(clientes.getString(9));
+                
                 cliente.setTarifa(clientes.getString(10));
                 cliente.setFechaRegistro(clientes.getDate(11));                
             }
@@ -283,11 +258,10 @@ public class Cliente {
                 cliente.setNombre(clientes.getString(2));
                 cliente.setDireccion(clientes.getString(3));
                 cliente.setTelefono(clientes.getString(4));
-                cliente.setRfc(clientes.getString(5));
-                cliente.setColonia(clientes.getString(6));
+                
                 cliente.setComunidad(clientes.getString(7));
                 cliente.setMunicipio(clientes.getString(8));
-                cliente.setCodigoPostal(clientes.getString(9));
+                
                 cliente.setTarifa(clientes.getString(10));
                 cliente.setFechaRegistro(clientes.getDate(11));
                
